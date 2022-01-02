@@ -62,7 +62,7 @@ const buildChartData = (data, casesType) => {
       };
       chartData.push(newDataPoint);
     }
-    console.log(data);
+
     // console.log(data[casesType]);
     lastDataPoint = data[casesType][date];
   }
@@ -94,7 +94,7 @@ const LineGraph = ({ casesType = "cases" }) => {
           data={{
             datasets: [
               {
-                label: "cases",
+                label: "Cases",
                 backgroundColor: "rgba(204, 16, 52, 0.5)",
                 borderColor: "#CC1034",
                 data: data,
